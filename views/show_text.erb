@@ -1,0 +1,37 @@
+<%= ERB.new(File.new("#{File.dirname __FILE__}/layout_css.erb").read).result(binding)%>
+<div class="offset-md-4 col-md-4 mt-5">
+    <div class="card">
+        <div class="card-header">Total scores of users</div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% @final_forest_root_arr.each{ |root_node| %>
+                <% root_node.each{ |sub| %>
+                <% if sub.content[:score].to_i != 0 %>
+                <tr>
+                    <td>
+                        <%=sub.name %>
+                    </td>
+                    <td>
+                        <%=sub.content[:score]%>
+                    </td>
+
+                </tr>
+                <% end %>
+                <%} %>
+                <% } %>
+            </tbody>
+        </table>
+        <div class="card-footer">
+            <a href='/coverage' target="_blank">Please click here for code rspec test coverage</a>
+            <br>
+            <a href='/doc' target="_blank">Please click here for technical documentation</a>
+        </div>
+    </div>
+</div>

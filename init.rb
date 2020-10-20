@@ -1,0 +1,6 @@
+require 'dotenv/load'
+require 'tree'  
+require 'date'
+require_relative 'modals/forest_operations' 
+require_relative 'modals/invitation_manager'
+require_relative 'modals/process_file'

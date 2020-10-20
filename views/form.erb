@@ -1,0 +1,27 @@
+<html>
+
+<%= ERB.new(File.new("#{File.dirname __FILE__}/layout_css.erb").read).result(binding)%>
+
+<body>
+  <div class="offset-md-4 col-md-4 mt-5">
+      <form action="/process_file" method="POST" enctype="multipart/form-data">
+      <div class="card card-info">
+
+        <div class="card-heading bg-info text-white"><i class="fas fa-file h3 m-2"></i>Upload Reward File(txt).</div>
+        <div class="card-body bg-light text-dark">
+            <div class="custom-file">
+                <input type="file" name="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
+          <input class="btn btn-info float-right m-2" type="submit" >
+        </div>
+        <div class="card-footer">
+            <a href='/coverage' target="_blank">Please click here for code rspec test coverage</a>
+            <br>
+            <a href='/doc' target="_blank">Please click here for technical documentation</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
