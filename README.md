@@ -24,9 +24,9 @@ __Setup the Development Environment:__
 
 - Clone the git repository
 
-		git clone https://gitlab.com/rvk0106/reward_system.git
+		git clone https://github.com/kattanaveenkumar/rewards_system.git
 
-		cd reward_system
+		cd rewards_system
 
         
 
@@ -54,7 +54,7 @@ Run unit tests:
 
 The test coverage of code is as shown below
 
-![https://gitlab.com/rvk0106/reward_system/raw/master/public/coverage.png](https://gitlab.com/rvk0106/reward_system/raw/master/public/coverage.png)
+![https://github.com/kattanaveenkumar/rewards_system/raw/master/public/coverage.png](https://github.com/kattanaveenkumar/rewards_system/raw/master/public/coverage.png)
 ![http://localhost:4567/coverage.png](http://localhost:4567/coverage.png)
  	
 Visit [http://localhost:4567/coverage/index.html#_AllFiles](http://localhost:4567/coverage/index.html)
@@ -88,6 +88,6 @@ With refference to the below problem statement I have assumed certain statements
 
  
 ![http://localhost:4567/problem.png](http://localhost:4567/problem.png)
-![https://gitlab.com/rvk0106/reward_system/blob/master/public/problem.png](https://gitlab.com/rvk0106/reward_system/raw/master/public/problem.png)
+![https://github.com/kattanaveenkumar/rewards_system/blob/master/public/problem.png](https://github.com/kattanaveenkumar/rewards_system/raw/master/public/problem.png)
 
 
